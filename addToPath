@@ -1,0 +1,8 @@
+#!/bin/bash
+echo What do you want to add to PATH?
+
+read path
+toAdd='export PATH=$PATH:'$path
+echo $toAdd >> '~/.zshrc'
+echo Added $toAdd to .zshrc
+
